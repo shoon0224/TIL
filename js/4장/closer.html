@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- 4장 변수스코프-->
+    </head>
+    <body>
+        <script>
+            function outer(){
+                var x=0;
+                return function (){
+                    return ++x;
+                };
+            }
+            
+            var x =-1;
+            var f = outer();
+            document.write(f());
+            document.write("<br/>");
+            document.write(f());
+            document.write("<br/>");
+            var g = outer();
+            document.write(g());
+            document.write("<br/>");
+            document.write(g());
+            document.write("<br/>");
+        </script>
+    </body>
+</html>
