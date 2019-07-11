@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Bin</title>
+    </head>
+    <body>
+        <ul>
+            <li>javascript</li>
+            <li>java</li>
+            <li>python</li>
+            <li>sanghoon</li>
+        </ul>
+    </body>
+    <script>
+        var list = document.querySelectorAll("li");
+        for(let i=0; i<list.length; i++){ //var 를 쓰면 4번째 리스트입니다 무한반복
+            list[i].addEventListener("click",function(){
+                console.log(i + "번쨰 리스트 입니다.");
+            });
+        }
+    </script>
+</html>

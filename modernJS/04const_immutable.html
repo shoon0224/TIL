@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+    </body>
+    <script>
+        function home(){
+            const list = ["apple", "orange", "watermelon"];
+            // list = "asdf"; 안된다. const로 list변수가 선언되어 있다.
+            list.push("banana");
+            console.log(list);
+
+            //const를 사용하더라도 배열과 오브젝트의 값을 변경하는 것은 가능하다.
+            //const는 불변을 의미하는 것이 아니다. 일종의 값을 재할당하는 것을 안되게 할뿐
+
+        }
+        //immutable array 를 어떻게 만들지?
+        const list = ["apple","orange","watermelon"];
+        list2 = [].concat(list, "banana");
+        console.log(list, list2); // list 출력 , list뒤에 바나나 할당되어 출력
+        console.log(list === list2) // false
+
+    </script>
+</html>
