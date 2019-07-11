@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!--ES2015 String에 새로운 메서드들.    -->
+    </body>
+    <script>
+        let str = "hello world ! ^^ ~~";
+        let matchstr = "^ ~~";
+        console.log(str.startsWith(matchstr)); //true
+        // str 시작하는 문자열이 띄워쓰기를 기준으로 matchstr의 문자와 일치하는 문자열이 있는가? 라는 뜻
+        console.log(str.endsWith(matchstr));
+        // // str 끝나는 문자열이 띄워쓰기를 기준으로 matchstr의 문자와 일치하는 문자열이 있는가? 라는 뜻
+        console.log("include test ", str.includes("world"));
+        // 다음과 같은 문자열이 포함되어 있는가.
+    </script>
+</html>
