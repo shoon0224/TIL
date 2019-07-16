@@ -1,0 +1,16 @@
+<script>
+    var data = [1,2,undefined,NaN,null,""];
+    //for(var i; i<data.length; i++){console.log(i);} --> 0,1,2,3,4,5
+    // data.forEach(function(value){//forEach로 값을 순회하여 알수있다.
+    //     console.log(value);
+    // });
+    Array.prototype.getIndex = function(){}; // 배열뒤에 function(){}이 추가 된다.
+    // for(let value of data){//forEach랑 결과가 같다. for of라는게 새로 나왔다.
+    //     console.log(value); //forEach나 for in 실수를 줄이기 위해(절대배열에선 forin을 쓰면 안된다.)
+    // }
+
+    var str = "hello world!!!!";
+    for(let value of str) { //문자열을 캐릭터 단위로 돌면서 출력해준다.
+        console.log(value); 
+    }
+</script>
