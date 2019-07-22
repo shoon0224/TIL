@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        var news = [
+            {
+                "title" : "sbs",
+                "newslist" : [
+                    "경주월드 가고싶다.",
+                    "아우디 R8타고싶다.",
+                    "갤럭시 폴드 안나오네 ㅋ"
+                ]
+            },
+            {
+                "title" : "mbc",
+                "newlist" : [
+                    "전주 가고싶다.",
+                    "포르쉐718박스터 gts 타고싶다.",
+                    "아이폰XI 디자인 지켜보자."
+                ]
+            }
+        ];
+
+        //let[,mbc] = news;
+        // console.log(mbc);
+        /*
+        let {title} = mbc;
+        console.log(title);
+        //Destructuring 을 이용해서 필요한 변수 값을 뽑는게 가능하다.
+        */
+
+        let [, {title, newlist}] = news;
+        console.log(newlist);
+    </script>
+</html>

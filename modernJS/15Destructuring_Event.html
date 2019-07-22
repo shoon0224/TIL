@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>가나다라마바사</div>
+    </body>
+    <script>
+        var news = [
+            {
+                "title" : "sbs",
+                "newslist" : [
+                    "경주월드 가고싶다.",
+                    "아우디 R8타고싶다.",
+                    "갤럭시 폴드 안나오네 ㅋ"
+                ]
+            },
+            {
+                "title" : "mbc",
+                "newlist" : [
+                    "전주 가고싶다.",
+                    "포르쉐718박스터 gts 타고싶다.",
+                    "아이폰XI 디자인 지켜보자."
+                ]
+            }
+        ];
+
+        function getNewsList([{newslist}]) {
+            console.log(newslist);
+        }
+        getNewsList(news);
+
+        document.querySelector("div").addEventListener("click", function({type,target}){
+            console.log(type,target.tagName);
+        }); 
+        //Destructuring은 변수의 어떤 필요한 값만 할당을 하는것
+    </script>
+</html>

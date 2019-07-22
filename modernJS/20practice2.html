@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //1. 유일한 값을 추출하는 과정에서 Set을 사용한다.
+        //2. getRandomNumber함수에 변수를 전달하는 과정에서 destructuring사용
+
+
+        const SETTING = {
+            name : "LUCKY LOTTO!",
+            count : 6,
+            maxNumber : 45
+        }
+
+        const{count, maxNumber} = SETTING;
+
+        function getRandomNumber(c) {
+            let Number = new Set();
+
+            for(let i =0; i<c; i++){
+                let lotto = parseInt(Math.random()*46);
+                if(Number.has(lotto)){
+                    i--;
+                    continue;
+                }else{
+                    Number.add(lotto);
+                }
+            }
+            return console.log(Number);
+        }
+        getRandomNumber(count);
+
+
+        
+    </script>
+</html>

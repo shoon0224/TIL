@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //WeakMap 활용
+        // WeakMap을 활용하고 안하고의 차이를 제대로 알아가자
+        //weakmap을 둠으로 해서 인스턴스관리를 좀더 할 수 있다.
+        //객체가 필요없어지게 되면 가비지컬랙션 대상이 돼서 자료를 보관하는 상태를 가볍게 해주기때문에
+        //가비지컬랙션이 되는 대상의 저장소를 만들 수 있다.
+
+        const wm = new WeakMap();// 위크맵을 이용해서 보관하면 효율적이다. //WeakMap이 전역공간에 있을 떄 효율적으로 동작된다는 것을 알 수 있다.
+        // function Area(height, width){
+        //     this.height = height;
+        //     this.width = width;
+        // }
+
+        function Area(height,width){
+            wm.set(this, {height, width}); //this는 현재 객체, 뒤에 height과 width를 숨겨놓는것이다.
+        }// Weakset에다가 효율적으로 이 객체(this)에 대한 추가정보를 담아두는 것이다. 그럼 이 클래스(function)는 this에 대한 인스턴스변수를 전혀 가지고 있지 않는것이고
+        //단점은 클래스밖에 전역공간에 const wm = new weakmap을 보관한다는 것 
+
+
+        Area.prototype.getArea = function(){
+            const {height, width} = wm.get(this); // 바로 이렇게 말이다.
+            //return this.height * this.width; // this. 키워드를 쓰는게 아니다 우리가 배운 Destructuring을 사용한다.
+            return height * width;
+        }
+
+        let myarea = new Area(10,20);
+        console.log(myarea.getArea());
+        console.log(myarea.height);//외부에서 접근이 안되기 때문에 undefined가 나온다. 
+
+
+        myarea = null;
+        console.log(wm);
+        console.log(wm.has(myarea));// null을 넣었기 때문에 false가 나온다.
+
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        const data = [
+            {
+                name : 'coffee-bean',
+                order : true,
+                items : ['americano', 'milk', 'green-tea']
+            },
+            {
+                name : 'starbucks',
+                order : false,
+            }
+        ]
+
+        function fn(tags, name, items) {
+            
+        }
+
+        const template = fn`<div>welcome ${data[1].name} !!;
+        <h2>주문가능항목</h2><div>${data[1].items}</div>`;
+        console.log(template);
+
+    </script>
+</html>
