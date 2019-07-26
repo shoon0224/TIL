@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //arrow function
+        //setTimeout은 콜백함수이다. 콜백함수는 나중에 실행되는 함수이다.
+        // setTimeout(()=> { //function() == ()=>
+        //     //setimeout함수의 첫번째 인자로 들어간다.
+        //     console.log("settimeout"); // 1초 뒤에 출력
+        // },1000);
+
+        // let newArr = [1,2,3,4,5].map(function(value, index, object){
+        //     return value * 2;
+        // });
+        let newArr = [1,2,3,4,5].map((v) => v * 2);
+
+        console.log("arrow newArr" ,newArr);
+        //콜백함수의 문제 : 함수의 인자로 들어갔는 인자에 있는 함수가 길다.
+    </script>
+</html>

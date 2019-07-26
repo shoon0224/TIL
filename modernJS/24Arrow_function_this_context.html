@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <p>mydiv</p>
+    <script>
+        //this context of Arrow function
+
+        // const myObj = {
+        //     runTimeout() {
+        //         setTimeout(() => { //Arrow함수를 이용하게 되면 this가 윈도우를 가리키는게 아니라 context를 가리킨다.
+        //             this.printData();  //이 this가 myObj를 가리키려면 함수를 .bind(this)로 감싸주면 된다.
+        //         },200);
+        //     },
+        //     printData() {
+        //         console.log("hi codesquad!");
+        //     }
+        // }
+        // myObj.runTimeout();
+
+
+        const el = document.querySelector("p");
+
+        const myObj = {
+            register() {
+                el.addEventListener("click", (evt)=> { 
+                    this.printData(evt.target);
+                });
+            },
+            printData(el){
+                console.log("clicked!!",el.innerText);
+            }
+        }
+        myObj.register();
+
+    </script>
+</html>

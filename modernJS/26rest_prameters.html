@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //rest prameters는 spread oprater랑 비슷하다. 헷갈리면 안된다.
+
+        function checkNum(...argArray){ //argument내장변수(배열은 아님) ,Array의 유용한 메소드를 쓸수 없다. //매개변수에 스프레드 오퍼레이터가 들어가면 매개변수가 아니라 배열로 받는다.
+            console.log(toString.call(argArray));// slice라는 함수를 arguments에서 실행해줘 라는 소스
+            const result = argArray.every((v)=> typeof v === "number")
+            console.log(result);
+        }
+        
+        const result = checkNum(10,2,3,4,5,"55");
+    </script>
+</html> 

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <body>
+        <div id = "message"></div>
+    </body>
     <script>
         const data = [
             {
@@ -10,16 +13,26 @@
             {
                 name : 'starbucks',
                 order : false,
+            },
+            {
+                name : 'dltkdgns',
+                order : true,
+                items : ['chocolate','banana']
             }
         ]
 
-        function fn(tags, name, items) {
-            
+        function fn(tags, name, items) { //tags는 배열, name은 첫번째 template, items는 두번째 template
+            if(typeof items === "undefined"){ 
+                items = "<span style='color:red'>주문가능한 상품이 없습니다.</span>";
+            }
+            return (tags[0] + name + tags[1] + items + tags[2]);
         }
-
-        const template = fn`<div>welcome ${data[1].name} !!;
-        <h2>주문가능항목</h2><div>${data[1].items}</div>`;
-        console.log(template);
+        //Tagged template literals
+        data.forEach((v) => {
+            let template = fn`<h2>welcome ${v.name} !!</h2>
+            <h4>주문가능항목</h4><div>${v.items}</div>`; // <div> 단위로 tags에 배열로 들어가게 된다.
+            document.querySelector("#message").innerHTML += template;  
+        });
 
     </script>
 </html>
