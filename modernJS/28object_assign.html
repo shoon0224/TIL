@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Object assign 메서드
+        //프로토타입을 메소드로 추가해서 만드는 방법을 Object.assign이다.
+        const healthObj = {
+            showHealth : function(){
+                console.log("오늘은 운동시간 : ", this.healthime);
+            }
+        }
+
+        // const myHealth = Object.create(healthObj);
+        // myHealth.healthime = "11:20";
+        // myHealth.name = "hoon";
+
+        const myHealth = Object.assign(Object.create(healthObj),{
+            name : "hoon",
+            lastTime : "11;20"
+        });
+        
+        console.log(myHealth)
+
+    </script>
+</html>

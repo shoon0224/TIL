@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <script>
+        //ES6 Class
+        //자바스크립트에는 class가 없다. 근데 class라는 키워드가 생겼다.
+        //자바스크립트에는 function밖에 없다.
+
+        /*
+        function Health(name){
+            this.name = name;
+        }
+
+        Health.prototype.showHealth = function() {
+            console.log(this.name + "님 안녕하세요");
+        }
+
+        const h = new Health("crong");
+        h.showHealth();
+        */
+
+        // 효율 적인 객체를 프로토 타입 안에 두면서 제너레이트 해주는거다.
+        //this.name으로 만든것들을 객체 h에 할당을 해주었다.
+
+        class Health { //클래스라고 되어있지만 이것은 페이크다 그냥 단순 function이다. 위 소스와 같단 말이다. 그럼 왜 class쓰냐 ? 가독성 때문에
+            constructor(name, lastTime){
+                this.name = name;
+                this.lastTime - lastTime;
+            }
+            showHealth(){
+                console.log("안녕하세요 " + this.name);
+            } // new해서 부를 필요가없다. constructor가 기본내장되어 있어서
+        }
+        const myHealth = new Health("corng");
+        myHealth.showHealth();
+
+        console.log(myHealth);
+        
+    </script>
+</html>
