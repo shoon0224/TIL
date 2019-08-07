@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
     <script>
-        //setPrototypeOf ~~의 프로토타입으로 셋팅한다.
-        
+        //setPrototypeOf ~~의 프로토타입으로 셋팅한다. 라는 메소드
 
         const healthObj = {
             showHealth : function(){
                 console.log("오늘 운동시간 : " + this.healthTime);
             },
-            setHealth : function(newTime){
+            setHealth : function(newTime) {
                 this.healthTime = newTime;
             }
         }
-
-        const myHealth = {
+            
+        const newobj =  Object.setPrototypeOf({
             name : "hoon",
-            lastTime : "11:20"
-        }
-        // Object.setPrototypeOf(myHealth, healthObj);
+            lastTIme : "11:20"
+        },healthObj);
 
-        console.log("myhealth is ", myHealth);
+        console.log(newobj);
     </script>
 </html>
