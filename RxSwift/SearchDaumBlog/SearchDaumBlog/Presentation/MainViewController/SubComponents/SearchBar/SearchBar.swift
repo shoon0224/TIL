@@ -43,17 +43,34 @@ class SearchBar: UISearchBar {
             .disposed(by: disposeBag)
         
         searchButtonTapped
-            .asSignal()
-            .emit(to: self.rx.endEditing)
+            .asSignal() ///Relay를 Signal로 변환, 이제 UI 이벤트 스트림이라는 의미
+            .emit(to: self.rx.endEditing) ///emit은 Signal 전용 바인딩 메서드 (RxCocoa)
             .disposed(by: disposeBag)
+        
+        self.shouldLoadResult = searchButtonTapped
+            .withLatestFrom(self.rx.text) { $1 ?? ""}
+            .filter { !$0.isEmpty }
+            .distinctUntilChanged()
     }
     
     private func attribute() {
-        
+        searchButton.setTitle("검색", for: .normal)
+        searchButton.setTitleColor(.systemBlue, for: .normal)
     }
     
     private func layout() {
+        addSubview(searchButton)
         
+        searchTextField.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(12)
+            $0.trailing.equalTo(searchButton.snp.leading).offset(-12)
+            $0.centerY.equalToSuperview()
+        }
+        
+        searchButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(12)
+        }
     }
     
     

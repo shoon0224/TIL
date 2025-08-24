@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA58E97B2E5A25FB00EA2B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA58E9722E5A25FB00EA2B2F /* Assets.xcassets */; };
+		CA58E97D2E5A25FB00EA2B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA58E9762E5A25FB00EA2B2F /* LaunchScreen.storyboard */; };
+		CA58E97E2E5A25FB00EA2B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9712E5A25FB00EA2B2F /* AppDelegate.swift */; };
+		CA58E97F2E5A25FB00EA2B2F /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9732E5A25FB00EA2B2F /* FilterView.swift */; };
+		CA58E9802E5A25FB00EA2B2F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9772E5A25FB00EA2B2F /* MainViewController.swift */; };
+		CA58E9812E5A25FB00EA2B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9782E5A25FB00EA2B2F /* SceneDelegate.swift */; };
+		CA58E9822E5A25FB00EA2B2F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9792E5A25FB00EA2B2F /* SearchBar.swift */; };
+		CA58E9842E5A356700EA2B2F /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9832E5A356200EA2B2F /* BlogList.swift */; };
+		CA58E9862E5A358800EA2B2F /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9852E5A358100EA2B2F /* BlogListCellData.swift */; };
+		CA58E98A2E5A386E00EA2B2F /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9892E5A386B00EA2B2F /* BlogListCell.swift */; };
+		CA58E9932E5A3E5000EA2B2F /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9922E5A3E4A00EA2B2F /* AlertActionConvertible.swift */; };
+		CA58E9972E5B71EF00EA2B2F /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9962E5B71E800EA2B2F /* DKBlog.swift */; };
+		CA58E99A2E5B772A00EA2B2F /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E9992E5B772300EA2B2F /* SearchBlogAPI.swift */; };
+		CA58E99C2E5B7C7E00EA2B2F /* SearchBolgNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58E99B2E5B7C7700EA2B2F /* SearchBolgNetwork.swift */; };
 		FBA47B398C53B5051DB61922 /* Pods_SearchDaumBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B787320F52608CE4FD2D62AD /* Pods_SearchDaumBlog.framework */; };
 /* End PBXBuildFile section */
 
@@ -15,28 +29,24 @@
 		226E0B375673FD21EFDBA969 /* Pods-SearchDaumBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDaumBlog.release.xcconfig"; path = "Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog.release.xcconfig"; sourceTree = "<group>"; };
 		B787320F52608CE4FD2D62AD /* Pods_SearchDaumBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchDaumBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA58E9042E57481800EA2B2F /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA58E9712E5A25FB00EA2B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA58E9722E5A25FB00EA2B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA58E9732E5A25FB00EA2B2F /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		CA58E9742E5A25FB00EA2B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA58E9752E5A25FB00EA2B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA58E9772E5A25FB00EA2B2F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CA58E9782E5A25FB00EA2B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CA58E9792E5A25FB00EA2B2F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		CA58E9832E5A356200EA2B2F /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
+		CA58E9852E5A358100EA2B2F /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
+		CA58E9892E5A386B00EA2B2F /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
+		CA58E9922E5A3E4A00EA2B2F /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
+		CA58E9962E5B71E800EA2B2F /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
+		CA58E9992E5B772300EA2B2F /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		CA58E99B2E5B7C7700EA2B2F /* SearchBolgNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBolgNetwork.swift; sourceTree = "<group>"; };
+		CA58E99D2E5B851D00EA2B2F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		CA58E99E2E5B858600EA2B2F /* Config.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.xcconfig.example; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CA58E9162E57481900EA2B2F /* Exceptions for "SearchDaumBlog" folder in "SearchDaumBlog" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CA58E9032E57481800EA2B2F /* SearchDaumBlog */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CA58E9062E57481800EA2B2F /* SearchDaumBlog */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CA58E9162E57481900EA2B2F /* Exceptions for "SearchDaumBlog" folder in "SearchDaumBlog" target */,
-			);
-			path = SearchDaumBlog;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA58E9012E57481800EA2B2F /* Frameworks */ = {
@@ -70,7 +80,9 @@
 		CA58E8FB2E57481800EA2B2F = {
 			isa = PBXGroup;
 			children = (
-				CA58E9062E57481800EA2B2F /* SearchDaumBlog */,
+				CA58E99D2E5B851D00EA2B2F /* Config.xcconfig */,
+				CA58E99E2E5B858600EA2B2F /* Config.xcconfig.example */,
+				CA58E97A2E5A25FB00EA2B2F /* SearchDaumBlog */,
 				CA58E9052E57481800EA2B2F /* Products */,
 				6D8D7461464367ABFF911D07 /* Pods */,
 				0B9A6214F5A0C4E8A2568660 /* Frameworks */,
@@ -83,6 +95,92 @@
 				CA58E9042E57481800EA2B2F /* SearchDaumBlog.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CA58E97A2E5A25FB00EA2B2F /* SearchDaumBlog */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E9712E5A25FB00EA2B2F /* AppDelegate.swift */,
+				CA58E9782E5A25FB00EA2B2F /* SceneDelegate.swift */,
+				CA58E9882E5A35E400EA2B2F /* Entities */,
+				CA58E9982E5B771C00EA2B2F /* Network */,
+				CA58E9872E5A359600EA2B2F /* Presentation */,
+				CA58E9722E5A25FB00EA2B2F /* Assets.xcassets */,
+				CA58E9742E5A25FB00EA2B2F /* Info.plist */,
+				CA58E9762E5A25FB00EA2B2F /* LaunchScreen.storyboard */,
+			);
+			path = SearchDaumBlog;
+			sourceTree = "<group>";
+		};
+		CA58E9872E5A359600EA2B2F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E98C2E5A3D3B00EA2B2F /* MainViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CA58E9882E5A35E400EA2B2F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E9962E5B71E800EA2B2F /* DKBlog.swift */,
+				CA58E9922E5A3E4A00EA2B2F /* AlertActionConvertible.swift */,
+				CA58E9852E5A358100EA2B2F /* BlogListCellData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CA58E98B2E5A3D1100EA2B2F /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E98D2E5A3D5300EA2B2F /* SearchBar */,
+				CA58E98E2E5A3D5C00EA2B2F /* BlogListView */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		CA58E98C2E5A3D3B00EA2B2F /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E9772E5A25FB00EA2B2F /* MainViewController.swift */,
+				CA58E98B2E5A3D1100EA2B2F /* SubComponents */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		CA58E98D2E5A3D5300EA2B2F /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E9792E5A25FB00EA2B2F /* SearchBar.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		CA58E98E2E5A3D5C00EA2B2F /* BlogListView */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E9832E5A356200EA2B2F /* BlogList.swift */,
+				CA58E98F2E5A3D7200EA2B2F /* SubComponents */,
+			);
+			path = BlogListView;
+			sourceTree = "<group>";
+		};
+		CA58E98F2E5A3D7200EA2B2F /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E9732E5A25FB00EA2B2F /* FilterView.swift */,
+				CA58E9892E5A386B00EA2B2F /* BlogListCell.swift */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		CA58E9982E5B771C00EA2B2F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CA58E99B2E5B7C7700EA2B2F /* SearchBolgNetwork.swift */,
+				CA58E9992E5B772300EA2B2F /* SearchBlogAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +199,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CA58E9062E57481800EA2B2F /* SearchDaumBlog */,
 			);
 			name = SearchDaumBlog;
 			productName = SearchDaumBlog;
@@ -149,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA58E97B2E5A25FB00EA2B2F /* Assets.xcassets in Resources */,
+				CA58E97D2E5A25FB00EA2B2F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,10 +302,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA58E97E2E5A25FB00EA2B2F /* AppDelegate.swift in Sources */,
+				CA58E9842E5A356700EA2B2F /* BlogList.swift in Sources */,
+				CA58E99C2E5B7C7E00EA2B2F /* SearchBolgNetwork.swift in Sources */,
+				CA58E9972E5B71EF00EA2B2F /* DKBlog.swift in Sources */,
+				CA58E97F2E5A25FB00EA2B2F /* FilterView.swift in Sources */,
+				CA58E99A2E5B772A00EA2B2F /* SearchBlogAPI.swift in Sources */,
+				CA58E9802E5A25FB00EA2B2F /* MainViewController.swift in Sources */,
+				CA58E9812E5A25FB00EA2B2F /* SceneDelegate.swift in Sources */,
+				CA58E98A2E5A386E00EA2B2F /* BlogListCell.swift in Sources */,
+				CA58E9862E5A358800EA2B2F /* BlogListCellData.swift in Sources */,
+				CA58E9822E5A25FB00EA2B2F /* SearchBar.swift in Sources */,
+				CA58E9932E5A3E5000EA2B2F /* AlertActionConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA58E9762E5A25FB00EA2B2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA58E9752E5A25FB00EA2B2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CA58E9182E57481900EA2B2F /* Debug */ = {
@@ -220,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6SXRBR67B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SearchDaumBlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -248,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6SXRBR67B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SearchDaumBlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -269,6 +391,7 @@
 		};
 		CA58E91A2E57481900EA2B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA58E99D2E5B851D00EA2B2F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -333,6 +456,7 @@
 		};
 		CA58E91B2E57481900EA2B2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA58E99D2E5B851D00EA2B2F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
