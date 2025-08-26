@@ -1,0 +1,6 @@
+framework module Pods_UsedGoodsUpload_MVVM {
+  umbrella header "Pods-UsedGoodsUpload-MVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}

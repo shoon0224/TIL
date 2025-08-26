@@ -25,8 +25,16 @@
 - 라이브러리 활용
   - RxCocoa  
 - 예외 처리
-  - Error Handling  
+  - Error Handling
+  
+---  
 
 ### 2-1. SearchDaumBlog
 **기존 블로그 검색 기능 프로젝트 MVVM으로 리팩토링**
 - MVC -> MVVM
+
+---
+
+### 3. UsedGoodsUpload-MVVM
+**RxSwift와 MVVM패턴으로 중고거래 앱 만들기**
+- MVVM 패턴 (ViewModel 역할)
