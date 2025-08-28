@@ -154,8 +154,8 @@
 		CA58EA082E5CE98C00EA2B2F /* DetailWriteFormCell */ = {
 			isa = PBXGroup;
 			children = (
-				CA58EA062E5CE98500EA2B2F /* DetailWriteFormCellViewModel.swift */,
 				CA58EA042E5CE97500EA2B2F /* DetailWriteFormCell.swift */,
+				CA58EA062E5CE98500EA2B2F /* DetailWriteFormCellViewModel.swift */,
 			);
 			path = DetailWriteFormCell;
 			sourceTree = "<group>";

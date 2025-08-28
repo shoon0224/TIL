@@ -48,7 +48,7 @@ class MainViewController: UIViewController {
                     let cell = tv.dequeueReusableCell(withIdentifier: "PriceTextFieldCell", for: IndexPath(row: row, section: 0)) as! PriceTextFieldCell
                     
                     cell.selectionStyle = .none
-                    cell.priceInputField.text = data
+                    cell.priceInputField.placeholder = data
                     cell.bind(viewModel.priceTextFieldCellViewModel)
                     return cell
                 case 3:
