@@ -15,7 +15,7 @@ struct MainViewModel {
     let detailWriteFormCellViewModel = DetailWriteFormCellViewModel()
     
     //ViewModel -> View
-    let cellData: Driver<[String]>
+    let cellData: Driver<[String]> //"무엇을 보여줄지" 결정
     let presentAlert: Signal<Alert>
     let push: Driver<CategoryViewModel>
     

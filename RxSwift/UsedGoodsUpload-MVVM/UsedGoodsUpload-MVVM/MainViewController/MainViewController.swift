@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     
     func bind(_ viewModel: MainViewModel) {
         viewModel.cellData
-            .drive(tableView.rx.items) { tv, row, data in
+            .drive(tableView.rx.items) { tv, row, data in //"어떻게 보여줄지" 결정
                 switch row {
                 case 0:
                     let cell = tv.dequeueReusableCell(withIdentifier: "TitleTextFieldCell", for: IndexPath(row: row, section: 0)) as! TitleTextFieldCell
