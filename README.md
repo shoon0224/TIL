@@ -1,4 +1,3 @@
-
 프로젝트로 학습한 내용을 기록  
 
 ## 🔹 RxSwift (패스트캠퍼스 강의)
@@ -38,3 +37,21 @@
 ### 3. UsedGoodsUpload-MVVM
 **RxSwift와 MVVM패턴으로 중고거래 앱 만들기**
 - MVVM 패턴 (ViewModel 역할)
+
+---
+
+### 4. FindCVS
+**편의점 위치 찾기 앱 구현을 통한 실전 MVVM 학습**
+- MVVM 패턴  
+- Unit Test  
+- RxTest
+
+---
+
+## 🔹 Combine
+
+### 1. FindCoronaCenter
+**Combine과 SwiftUI로 코로나19 백신 접종 센터 조회 앱 개발**
+- Combine vs RxSwift 비교  
+- Combine  
+- SwiftUI
